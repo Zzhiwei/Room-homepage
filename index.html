@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style/style.css">
+  <script src="./index.js" defer></script>
+  <title>Frontend Mentor | Room homepage</title>
+</head>
+<body>
+    <header class="header">
+      <nav class="header__nav">
+        <div class="header__nav-content">
+            <h1 class="header__logo">room</h1>
+            <ul class="header__links">
+              <li class="header__link"> <a href="#">Home</a></li>
+              <li class="header__link"> <a href="#">Shop</a></li>
+              <li class="header__link"> <a href="#">About</a></li>
+              <li class="header__link"> <a href="#">Contact</a></li>
+            </ul>
+        </div>
+        
+        <button class="header__menu-burger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </button>
+      </nav>
+    </header>
+
+  <main class="main">
+    <section class="grid1">
+        <div class="img-carousell">
+          <picture class="grid1__picture">
+            <source media="(max-width: 375px)" srcset="./images/mobile-image-hero-1.jpg"/>
+            <img class="hero-image zoom" src="./images/desktop-image-hero-1.jpg" alt="">
+          </picture>
+          <picture class="grid1__picture">
+            <source media="(max-width: 375px)" srcset="./images/mobile-image-hero-2.jpg"/>
+            <img class="hero-image zoom" src="./images/desktop-image-hero-2.jpg" alt="">
+          </picture>
+          <picture class="grid1__picture">
+            <source media="(max-width: 375px)" srcset="./images/mobile-image-hero-3.jpg"/>
+            <img class="hero-image zoom" src="./images/desktop-image-hero-3.jpg" alt="">
+          </picture>
+        </div>
+        <div class="grid1__shop-now">
+          <div class="flexWrapper">
+              <h1 id="shopnow_header">
+                Manufactured with the best materials
+              </h1>
+              <p id="shopnow_paragraph">
+                Our modern furniture store provide a high level of quality. Our company has invested in advanced technology to ensure that every product is made as perfect and as consistent as possible. With three decades of experience in this industry, we understand what customers want for their home and office.
+              </p>
+              <button class="grid1__button">
+                SHOP NOW
+                <img  src="./images/icon-arrow.svg" alt="arrow right">                
+              </button>
+          </div>
+          <div class="grid1__nav">
+            <button class="prevImg">
+              <img src="./images/icon-angle-left.svg" alt="">
+            </button>
+            <button class="nextImg">
+              <img src="./images/icon-angle-right.svg" alt="">
+            </button>
+          </div>
+        </div>
+    </section>
+
+
+    <section class="grid2">
+      <picture class="grid2__picture">
+        <img src="./images/image-about-dark.jpg" alt="">
+      </picture>
+      <div class="grid2__about">
+        <div class="flexWrapper">
+          <h2>ABOUT OUR FURNITURE</h2>
+          <p>
+            Our multifunctional collection blends design and function to suit your individual taste.
+            Make each room unique, or pick a cohesive theme that best express your interests and what
+            inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+            or anything in between. Product specialists are available to help you create your dream space
+          </p>
+        </div>
+      </div>
+      <picture class="grid2__picture">
+        <img src="./images/image-about-light.jpg" alt="">
+     </picture>
+    </section>
+  </main>
+  </div>
+</body>
+</html>
